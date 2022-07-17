@@ -8,7 +8,7 @@ class ProductController extends Controller
 {
     //
     public function showAll(){
-        $dataDariModel="Inilah datanya";
-        return view('product.display',["products"=> $dataDariModel ]);
+        $dataDariModel ="Inilah datanya";
+        return view('product.display',["products"=> $dataDariModel]);
     }
 }
