@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/bypass', function () {
+    return "not allowed";
+});
+
+use App\Http\Controllers\ProductController;
+Route::get('/product/display', [ProductController::class, 'showAll']);
