@@ -23,3 +23,6 @@ Route::get('/bypass', function () {
 
 use App\Http\Controllers\ProductController;
 Route::get('/product/display', [ProductController::class, 'showAll']);
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
